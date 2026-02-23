@@ -14,7 +14,7 @@ body.noScroll{overflow: hidden;}
 .header-banner{position: relative;overflow: hidden;box-sizing: border-box;}
 .header-banner .swiper-wrapper{height: 100% !important;}
 .header-banner .swiper-slide a{display: block;}
-/* 260223 웹접근성 (yz) */
+/* 260223 웹접근성  (yz) */
 .header-banner .swiper-slide a:focus-visible img{outline: 3px solid; outline-offset: -3px;}
 .header-banner .swiper-slide a img{width: 100%;}
 .header-banner .swiper-slide a img.pc{display: block;aspect-ratio: 30 / 1;max-height: 65px;}
