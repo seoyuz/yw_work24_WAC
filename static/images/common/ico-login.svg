@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_166244" data-name="사각형 166244" width="20" height="20" transform="translate(1489 56)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(-1.4, -1) scale(1.1)">
+  <g id="ico_login" transform="translate(-1489 -56)" clip-path="url(#clip-path)">
+    <g id="그룹_125933" data-name="그룹 125933" transform="translate(1492 72.908) rotate(-90)">
+      <g id="그룹_125932" data-name="그룹 125932" transform="translate(9.8, 10.9) rotate(180)">
+        <line id="선_6111" data-name="선 6111" y1="2.981" x2="2.981" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="선_6112" data-name="선 6112" x1="2.981" y1="2.981" transform="translate(2.981)" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="패스_225139" data-name="패스 225139" d="M254.616,305.5v4.981a.6.6,0,0,1-.6.6H242.083a.59.59,0,0,1-.583-.6V305.5" transform="translate(-241.5 -297.365)" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="선_6113" data-name="선 6113" y1="8" transform="translate(6.558, 1.2)" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+*{box-sizing: border-box;}
+::-moz-selection {background: #d6b4ff;} /* 웹접근성 */
+::selection {background: #d6b4ff;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+  blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+  em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
+  var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+  legend, table, caption, tbody, tfoot, thead, tr, td, article, aside,
+  canvas, details, embed, figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+input{appearance:none; -webkit-appearance:none; -webkit-border-radius:0; font-family:inherit; font-size:inherit; line-height:inherit;}
+body.overflow {overflow: hidden;}
+
+/* skipNavigation */
+.skip-to-content {position: absolute;margin: 0 auto;z-index: 99999;top: 0;left: 0;right: 0;}
+.skip-to-content a {position: absolute;width: 100%;font-size: 0;top: -50px;}
+.skip-to-content a:active, .skip-to-content a:focus-visible {display: block;font-size: 12px;padding: 20px;top: 0;  text-align: center;color: #fff;font-weight: 600;background: #1d1d1d;outline: 0;}
+
+img {vertical-align: top;max-width: 100%;}
+
+table {border-collapse: collapse;border-spacing: 0;table-layout: fixed;}
+ul, ol {list-style: none;}
+
+a {color: #333;text-decoration: none;}
+
+caption {text-indent: -99999px;height: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+legend {display: none;}
+
+/*아이폰 인풋 버튼 둥근테두리 그림자 제거*/
+input[type=button] {-webkit-appearance: none; -webkit-border-radius: 0;}
+
+/* IE10+ focus */
+@media screen and (-ms-high-contrast: active) , ( -ms-high-contrast : none) {
+  /* Enter your style code */
+  .checkbox input:focus+label::after {content: "";position: absolute;left: 0;top: 0;width: 100%;height: 100%;border: 2px solid #000;display: inline-block;}
+}
+
+img {font-size: 17px; /* 250321 font size (ej) */line-height: 120%;}
+.valign-top {vertical-align: top !important;}
+.valign-middle {vertical-align: middle !important;}
+.valign-bottom {vertical-align: bottom !important;}
+
+.display-block {display: block;}
+.display-inline {display: inline;}
+.display-inline-block {display: inline-block;}
+.display-none {display: none;}
+
+.wrap {width: 100%;height: 100%;}
+
+.inner {position: relative; max-width: 1420px; width: 94%; margin: 0 auto;box-sizing: border-box;padding: 0 0;}
+.pc-block {display: block;line-height: 160%;}
+/* 250325 loading (ej) */
+.blockUI.blockMsg.blockPage { left:50% !important; top: 50% !important; transform: translate3d(-50%, -50%, 0) !important;}
+
+/* 251017 웹 접근성 품질개선 - input/textarea.inp 지우기 버튼 동적 생성 (ej) */
+.form-control-clear { position: relative; pointer-events: auto; cursor: pointer; display: inline-block; width: 17px; min-width: 17px; height: 17px; background: #555; text-indent: -99999px; border-radius: 100px; box-sizing: border-box; padding: 0; margin-left: -37px; float: right; margin-top: 16px; margin-right: 10px;}
+.form-control-clear::before, .form-control-clear::after { content: ''; position: absolute; left: 50%; top: 50%; width: 9px; height: 1px; background: #fff; border-radius: 2px; transform-origin: center;}
+.form-control-clear::before {transform: translate(-50%, -50%) rotate(45deg);}
+.form-control-clear::after {transform: translate(-50%, -50%) rotate(-45deg);}
+.form-control-clear.hidden {display: none;}
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  select, .select {padding: 0 15px; padding-right: 30px; background-position: right 12px top 50%; min-width: auto; font-size:14px; /* 250328 font-size (ej) */}
+  input.inp { font-size:14px;} /* 250328 font-size (ej) */
+  .checkbox label {font-size: 14px;}
+  table.board-list {table-layout: auto;}
+}
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 320px) {
+  select {min-width: auto; margin: 0;}
+}
