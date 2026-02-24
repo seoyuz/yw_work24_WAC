@@ -480,6 +480,8 @@ button#vrPopupBtn::before{background-image: url(../images/common/ico_menu_vr.svg
 .list-top .sort .d-flex{justify-content:flex-end;}
 .list-top .sort .label{margin-right:4px; word-break:keep-all; overflow-wrap:anywhere;}
 .list-top .sort .d-flex + .d-flex .label{margin-left:12px;}
+/* 260223 웹접근성 (yz) */
+.list-top .sort .btn.ico-search{height: 40px; box-sizing: border-box;}
 
 .list-top h4.left{margin-top:48px; margin-bottom:0;}
 

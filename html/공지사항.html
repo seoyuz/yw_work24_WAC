@@ -1,0 +1,2241 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+
+
+
+
+
+
+
+
+
+<!-- 헤더에 csrf토큰 -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+
+<link rel="stylesheet" type="text/css" href="/static/css/common.css?v=20260211">
+<link rel="stylesheet" type="text/css" href="/static/external/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css?v=20260211">
+<link rel="icon" href="/static/images/common/KEIS.ico">
+
+<script type="text/javascript" src="/static/external/jquery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/static/external/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/static/external/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="/static/external/spin/spin.js"></script>
+<script type="text/javascript" src="/static/external/moment/moment.min.js"></script>
+<script type="text/javascript" src="/static/external/moment/locale/locales.min.js"></script>
+<script type="text/javascript" src="/static/external/blockui/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/static/external/index/index.global.min.js"></script>
+<script type="text/javascript" src="/static/js/xh_commonUtil.js?v=20260211"></script>
+<script type="text/javascript" src="/static/js/xh_common.js?v=20260211"></script>
+<script type="text/javascript">
+  
+    
+      const sessionCurrentMenuPurpSecd = "EBM02";
+    
+    
+  
+  
+  
+    const sessionConcTrgtSeCd = "EBM02";
+  
+  
+    const head_menuId = "MXH0000072";
+    const head_prgmId = "xhga00_m01";
+  
+  //메시지 출력
+  if ("") {
+      setTimeout(function(){
+        alert("");
+      }, 100);
+  } else if ("") {
+      setTimeout(function(){
+        alert("");
+      }, 100);
+  }
+  ComLib.c.CONTEXT_PATH = "/";
+</script>
+<!-- title 내용 생성 -->
+
+    
+
+
+    
+    
+        
+        
+    
+        
+        
+    
+
+
+    
+        
+    
+    
+
+<!-- ./ title 내용 생성 -->
+<title>공지사항 | 홈 &gt; 알림마당 &gt; 공지사항 | 청년일경험 포털</title>
+</head>
+<body>
+  <!-- SKIP NAVI -->
+  <div class="skip-nav">
+    <a href="#content">본문으로 바로가기</a>
+    <a href="#gnb">주메뉴 바로가기</a>
+  </div>
+  <!-- // SKIP NAVI -->
+  <div class="wrapper">
+    <!-- HEADER -->
+    
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/static/css/commonNew.css?v=20260211">
+<link rel="stylesheet" type="text/css" href="/static/css/layoutNew.css?v=20260211">
+<link rel="stylesheet" type="text/css" href="/static/external/swiper/swiper-bundle.min.css">
+
+<script type="text/javascript" src="/static/external/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="/static/js/commonNew.js?v=20260211"></script>
+<script type="text/javascript" src="/static/js/common/header.js?v=20260211"></script>
+<!-- 20260204 검색 js 추가 -->
+<script type="text/javascript" src="/static/solution/wisenut/js/searchMain.js?v=20260211"></script>
+<!-- HEADER -->
+<header id="header-new">
+            <div class="header-top-new">
+                <div class="inner">
+                    <span class="nuri-text">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+            <!-- 비로그인시에만, 배너가 보임, 닫기버튼 주석처리 -->
+            
+            
+            
+            <div class="header-bottom-new">
+                <div class="inner">
+                        <div class="nav-wrap">
+                            <div class="logoBox-wrap">
+                                <h1 class="logo-box"><a href="/main.do" class="logoNew">청년 일경험 포털</a></h1>
+                            </div>
+                                                <div class = "util-new-wrap">
+                    <ul class="util-new">
+                        
+                              <!-- 비로그인시 -->
+                             <li class="login-new"><a href="/a/b/openLogin.do" onclick="onSpinBlockUI();"><i class="icon"></i>로그인</a></li>
+                             <li class="join"><a href="/a/b/openJoin.do" class="join"><i class="icon"></i>회원가입</a></li>
+                             <!-- //비로그인시 -->
+                        
+                        
+                    </ul>
+                    </div>
+                    <div class = "all-menu-wrap">
+                            <button type="button" class="all-menu"><span class="blind">전체메뉴 열기</span></button>
+
+                        </div>
+                    </div>
+
+              <!-- MOBILE 펼침 메뉴를 별도 처리 -->
+              <div class="mob-util" style="display:none">
+                <button type="button" class="mobile-close"><span class="blind">메뉴 닫기</span></button>
+                <ul class="util">
+                  
+                    <!-- 비로그인시 -->
+                    <li class="txt before">로그인하시면 <br>더 많은 서비스를 이용할 수 있어요</li>
+                    <li class="join"><a href="/a/b/openJoin.do" onclick="onSpinBlockUI();">회원가입</a></li>
+                    <li class="login"><a href="/a/b/openLogin.do" onclick="onSpinBlockUI();">로그인</a></li>
+                    <!-- //비로그인시 -->
+                  
+                  
+              </ul>
+            </div>
+                 
+                    <div class="srch-wrap">
+                        <div class="inp-wrap">
+                            <div class="inp-box">
+                                <span class="inp-search-icon" aria-hidden="true"></span>
+                                <input id="totalSearch" type="text" placeholder="검색어를 입력해주세요." class="inp" title="검색어를 입력해주세요.">
+                                <!-- 자동완성 추가 -->
+                                <ul id="autocompleteList" class="autocomplete-list" style="display: none;">
+                                  <li class="auto-item word_link" data-text="프로그램"><font style="font-size:11px"><font style="color:#0011ff">프</font>로그램</font></li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn-srch" onclick="fn_totalSearch();"><span class="blind">검색</span></button>
+                        </div>
+                        <div class="history-area">
+                            <!-- 검색창 클릭 시 .active 생성 -->
+                            <div>
+                                <div class="left">
+                                    <div class="trend-box">
+                                        <p class="tit">인기검색어</p>
+                                        <div id="searchPopword" class="item-list">
+                                        </div>
+                                    </div>
+                                    <div class="history-box">
+                                        <p class="tit">최근 본 일경험 프로그램</p>
+                                        <!-- 로그인 전 -->
+                                        
+                                          <div class="center">
+                                              <P>최근 본 일경험 프로그램은 로그인 후 <br>확인 가능합니다.</P>
+                                              <a href="/a/b/openLogin.do" onclick="onSpinBlockUI();" class="go-to-login">로그인</a>
+                                          </div>
+                                          <div class="item-list" id="recent_list" style="display:none"></div>
+                                        
+                                        
+                                    </div>
+                                </div>
+
+                                <form id="detailPageForm" method="POST"></form>
+                                <div class="right">
+                                    <p class="tit">지원 마감 임박 공고</p>
+                                    <ul class="list" id ="deadline_work_list">
+                                     <!-- js추가 -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                 <div class="keyword-box">
+                 <div id="keyword-wrap-line" class="keyword-wrap">
+                  <p>인기 검색어</p>
+                  <div class="item">
+                    <span class="num"></span>
+                    <a href=""></a>
+                    <span class="rank down"><em>1</em><i class="blind"></i></span>
+                  </div>
+                </div>
+                </div>
+                </div>
+            
+                </div>
+            </div>
+            <!-- 비로그인시 -->
+    <div class="header-bottom">
+        <div class="gnb-bg"></div>
+        <div class="wrap">
+            <!-- GNB -->
+            <nav class="gnb" id="gnb">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">사업소개</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000004');" >청년일경험 포털</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000136');" >고용노동부 청년일경험</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000005');" >주관기관별 일경험 사업</a>
+                            </li>
+                        </ul>
+                    </li>
+                            
+                    <li>
+                        <a href="javascript:void(0);">일경험 프로그램</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000008');" >프로그램 정보</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000019');" >모집일정</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000022');" >운영기관</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000024');" >참여기업</a>
+                            </li>
+                        </ul>
+                    </li>
+                            
+                    <li>
+                        <a href="javascript:void(0);">우수사례 커뮤니티</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000125');" >인턴형 우수사례</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000127');" >프로젝트형 우수사례</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000129');" >ESG지원형 우수사례</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000131');" >기업탐방형 우수사례ddd</a>
+                            </li>
+                        </ul>
+                    </li>
+                            
+                    <li>
+                        <a href="javascript:void(0);">알림마당</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000072');" >공지사항</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000074');" >자료실</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000078');" >VR 직업체험</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000076');" >직업정보 동영상</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000026');" >수료증 진위확인</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000142');" >우수사례 공모전</a>
+                            </li>
+                        </ul>
+                    </li>
+                            
+                    <li>
+                        <a href="javascript:void(0);">고객센터</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000084');" >자주하는질문(FAQ)</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000086');" >이용안내</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000087');" >사이트맵</a>
+                            </li>
+                                
+                            <li>
+                                <a href="javascript:fn_header_menuMove('MXH0000088');" >운영 정책</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- // GNB -->
+            <!-- 웹 접근성 :
+             선택 시 사이트맵 페이지로 이동하는 기능을 하는 버튼에 숨김 텍스로 '전체메뉴 열기'를 제공하고 있어 화면 낭독기 사용자에게 혼란을 주고 있습니다.
+             * 버튼의 용도와 목적에 맞는 안내를 제공하여 화면 낭독기 사용자가 버튼의 용도와 목적을 올바르게 인지할 수 있도록 제공해야 합니다.-->
+            <button class="btn-menu" onclick="fn_header_menuMove('MXH0000087');"><span class="blind">사이트맵으로 이동하기</span></button>
+        </div>
+    </div>
+
+            <div class="dim"></div>
+        </header>
+        <!--............. mobile gnb .............-->
+        <div class="mobile-gnb-wrap">
+            <div class="mobile-gnb">
+              <nav class="gnb">
+                <ul class="depth1">
+                    
+                      
+                        
+                          
+                          
+                            <li class="depth1-item ">
+                              <a href="javascript:void(0);" aria-expanded='false'>사업소개<i></i></a>
+                <ul class="depth2">
+                      
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000004');">청년일경험 포털</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000136');">고용노동부 청년일경험</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000005');">주관기관별 일경험 사업</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                  </ul>
+                </li>
+                        
+                        
+                          
+                          
+                            <li class="depth1-item ">
+                              <a href="javascript:void(0);" aria-expanded='false'>일경험 프로그램<i></i></a>
+                <ul class="depth2">
+                      
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000008');">프로그램 정보</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000019');">모집일정</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000022');">운영기관</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000024');">참여기업</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                  </ul>
+                </li>
+                        
+                        
+                          
+                          
+                            <li class="depth1-item ">
+                              <a href="javascript:void(0);" aria-expanded='false'>우수사례 커뮤니티<i></i></a>
+                <ul class="depth2">
+                      
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000125');">인턴형 우수사례</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000127');">프로젝트형 우수사례</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000129');">ESG지원형 우수사례</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000131');">기업탐방형 우수사례</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                  </ul>
+                </li>
+                        
+                        
+                          
+                          
+                            <li class="depth1-item is-expanded">
+                              <a href="javascript:void(0);" aria-expanded='false'>알림마당<i></i></a>
+                <ul class="depth2">
+                      
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item on">
+                  <a href="javascript:fn_header_menuMove('MXH0000072');">공지사항</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000074');">자료실</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000078');">VR 직업체험</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000076');">직업정보 동영상</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000026');">수료증 진위확인</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000142');">우수사례 공모전</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                  </ul>
+                </li>
+                        
+                        
+                          
+                          
+                            <li class="depth1-item ">
+                              <a href="javascript:void(0);" aria-expanded='false'>고객센터<i></i></a>
+                <ul class="depth2">
+                      
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000084');">자주하는질문(FAQ)</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000086');">이용안내</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+              
+                  <li class="depth2-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000087');">사이트맵</a>
+                </li>
+                
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+                  <li class="depth2-item ">
+                  <span>운영 정책</span>
+                </li>
+              
+              
+              
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+                  <li class="depth3-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000089');"> &bull; 이용약관</a>
+                </li>
+              
+              
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+                  <li class="depth3-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000090');"> &bull; 개인정보처리방침</a>
+                </li>
+              
+              
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+                  <li class="depth3-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000091');"> &bull; 이메일무단수집거부</a>
+                </li>
+              
+              
+        
+                      
+                          
+                    
+                    
+                      
+                    
+              
+                      
+                        
+                          
+                           
+              
+              
+                  <li class="depth3-item ">
+                  <a href="javascript:fn_header_menuMove('MXH0000092');"> &bull; 저작권보호정책</a>
+                </li>
+              
+              
+        
+                      
+                          
+                    
+                    
+                      
+                </ul>
+              </li>
+                      
+                    
+              
+                </ul>
+              </nav>
+
+            </div>
+        </div>
+        <!--............. //mobile gnb .............-->
+        <!--............. // header .............-->
+
+<!-- User Authentication popup -->
+<div class="popup" style="display: none;" id="userAuthenticationPopup">
+    <div class="popup-wrap">
+        <p class="popup-header">로그인 필요</p>
+        <div class="popup-body" tabindex="0">
+          <p>로그인이 필요한 서비스 입니다.<br><br>로그인 페이지로 이동 하시겠습니까?</p>
+        </div>
+        <div class="popup-footer">
+            <button class="btn normal-line md">닫기</button>
+            <button class="btn normal-line md ico-prev" onclick="fn_header_prevMenuMove();">이전</button>
+            <button class="btn primary-color md ico-home">메인으로</button>
+            <button class="btn primary-color md ico-login">로그인</button>
+        </div>
+        <button class="popup-close"><span class="blind">닫기</span></button>
+    </div>
+</div>
+<!-- // User Authentication popup -->
+<!-- 임시 로그인 팝업 - 테스트환경 구성 지연으로 추가 구현 -->
+<div class="popup" style="display: none;" id="tmprLoginPopup">
+  <div class="popup-wrap">
+    <p class="popup-header">임시 로그인</p>
+    <div class="popup-body" tabindex="0">
+      <div class="tab-container">
+        <div class="tab-list" role="tablist" aria-label="임시 로그인 탭">
+          <button type="button" id="tabIndv" role="tab" aria-selected="true" aria-controls="panelIndv">개인</button>
+          <button type="button" id="tabEntr" role="tab" aria-selected="false" aria-controls="panelEntr">기업</button>
+        </div>
+        <form>
+          <div class="tab-panel" id="panelIndv" role="tabpanel" aria-labelledby="tabIndv" aria-hidden="false">
+            <div class="tbl view">
+              <table>
+                <caption>임시 로그인(개인) 표 - 로그인 항목 정보 입력으로 구성</caption>
+                <colgroup>
+                  <col class="label">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>테스트 로그인 (개인)</th>
+                    <td>
+                      <div class="ipt flex-fill w-md-100">
+                        <label><input type="password" maxlength="13" autocomplete="off" label="password"><span style="display:none;">사업자등록번호</span></label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-panel" id="panelEntr" role="tabpanel" aria-labelledby="tabEntr" aria-hidden="true">
+            <div class="tbl view">
+              <table>
+                <caption>임시 로그인(기업) 표 - 로그인 항목 정보 입력으로 구성</caption>
+                <colgroup>
+                  <col class="label">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>테스트 로그인 (기업)</th>
+                    <td>
+                      <div class="ipt flex-fill w-md-100">
+                        <label><input type="password" maxlength="10" autocomplete="off"><span style="display:none;">사업자등록번호</span></label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    <div class="popup-footer">
+      <button class="btn primary-color md ico-login" onclick="fn_tmprLogin();">로그인</button>
+    </div>
+    <button class="popup-close"><span class="blind">닫기</span></button>
+  </div>
+</div>
+<!-- // 임시 로그인 팝업 -->
+<!-- User RlnmCrfcCfrm popup -->
+<div class="popup" style="display: none;" id="userRlnmCrfcCfrmPopup">
+    <div class="popup-wrap">
+        <p class="popup-header">실명인증 필요</p>
+        <div class="popup-body" tabindex="0">
+          <p>실명인증이 필요한 서비스 입니다.<br/><br/>실명인증 페이지로 이동 하시겠습니까?</p><br/>
+          <small>* 실명인증 진행 &rarr; 로그아웃 &rarr; 재 로그인 완료하여야 실명인증 적용됩니다.</small>
+        </div>
+        <div class="popup-footer">
+            <button class="btn normal-line md">닫기</button>
+            <a class="btn primary-color md" href="/a/b/openIndvMberRlnmCrfcPage.do" target="_blank">실명인증</a>
+        </div>
+        <button class="popup-close"><span class="blind">닫기</span></button>
+    </div>
+</div>
+<!-- // User Authentication popup -->
+
+
+<!-- 20260204 검색 스크립트 -->
+<!-- 퍼블 이후 검색 구현 -->
+<script type="text/javascript">
+ //const CONTEXT_PATH="";
+
+ function openDetailPage(linkUrl, params, keyword){
+   saveWorkExpKeyword(keyword);
+
+ //최근본 공고 시작
+   let recentHtml = "";
+   const cookie = getCookie("recent_work_keywords");
+   if(!cookie){
+     recentHtml += "<div class=\"center\" id=\"recentWorkNoData\" style=\"display: block;\">";
+     recentHtml += "<p>최근 본 내역이 없습니다.</p>";
+     recentHtml += "</div>";
+   }else{
+   var keywordList = [];
+
+   if(cookie){
+     try{
+       keywordList = JSON.parse(decodeURIComponent(cookie));
+       console.log("keywordList try : " + keywordList);
+       if(typeof keywordList == "string"){
+         keywordList = keywordList.split(",").map(s => s.trim()).filter(Boolean);
+       }
+
+       if(Array.isArray(keywordList) && keywordList.length == 1 && typeof keywordList[0] === "string" && keywordList[0].includes(",")){
+       keywordList = keywordList[0].split(",").map(s => s.trim()).filter(Boolean);
+     }
+
+     }catch(e){
+       keywordList = [];
+     }
+   }
+
+   for(let i=0; i<keywordList.length; i++){
+
+     recentHtml += "<div class=\"item recentKeyword\">";
+     recentHtml += "<a href=\"\">" + keywordList[i] + "</a>";
+     recentHtml += "<button class=\"btn-delete\" onmousedown=\"event.preventDefault(); event.stopPropagation()\"; onclick=\"removeOneKeyword('" + keywordList[i] + "', this)\" title=\"삭제\"></button>";
+     recentHtml += "</div>";
+   }
+     recentHtml += "<button class=\"btn-delete all\" onmousedown=\"event.preventDefault(); event.stopPropagation()\"; onclick=\"removeAllKeywords()\">전체삭제</button>";
+   }
+
+   if(!(typeof recent_list == "undefined" || recent_list == undefined || recent_list == null)){
+       recent_list.innerHTML = "";
+       recent_list.innerHTML = recentHtml;
+   }
+
+   const form = document.getElementById('detailPageForm');
+   form.action = ComLib.c.CONTEXT_PATH + linkUrl;
+   form.target = "_self";
+ /* 이전 클릭시 생성된 내용 제거 */
+   form.innerHTML = '';
+   /* form 내부에 파라미터들 생성 */
+   for (const key in params){
+     /* params 객체가 실제로 해당 key를 소유하고 있는지 분기 처리 */
+     if(params.hasOwnProperty(key)){
+       const input = document.createElement('input');
+       input.type = 'hidden';
+       input.name = key;
+       input.value = params[key];
+       /* 생성한 input을 form 내부에 추가 */
+       form.appendChild(input);
+     }
+   }
+   form.submit();
+ }
+
+//2. 쿠키 저장 로직
+ function saveWorkExpKeyword(keyword){
+ var COOKIE_NAME = "recent_work_keywords";
+ var MAX_COUNT = 5;
+
+ var cookieValue = getCookie(COOKIE_NAME);
+ var keywordList = [];
+
+ if(cookieValue){
+   try{
+     keywordList = JSON.parse(decodeURIComponent(cookieValue));
+   }catch(e){
+     keywordList = [];
+   }
+ }
+
+ //중복제거
+ var index = keywordList.indexOf(keyword);
+ if(index !== -1){
+   keywordList.splice(index, 1);
+ }
+
+ //추가 및 자르기
+ keywordList.unshift(keyword);
+ if(keywordList.length > MAX_COUNT){
+   keywordList = keywordList.slice(0, MAX_COUNT);
+ }
+
+ //저장
+ setCookie_search(COOKIE_NAME, (JSON.stringify(keywordList)),7);
+ }
+
+ //3.쿠키 저장(set)
+ function setCookie_search(name, value, days){
+   var expires = "";
+   if(days){
+     var date = new Date();
+     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+     expires = "; expires=" + date.toUTCString();
+   }
+   document.cookie = name + "=" + (value || "") + expires + "; path=/";
+ }
+
+ //4. 쿠키 조회(get)
+ function getCookie(name){
+   var nameEQ = name + "=";
+   var ca = document.cookie.split(';');
+   for(var i=0; i < ca.length; i++){
+     var c = ca[i];
+     while(c.charAt(0) == ' ')c = c.substring(1, c.length);
+     if(c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+   }
+   return null;
+ }
+</script>
+
+    <main class="container">
+      <div class="wrap">
+        <!-- LNB -->
+        
+
+
+
+
+
+
+
+
+<!-- LNB -->
+<div class="lnb">
+    <div class="wrap">
+        <nav>
+            <h2>알림마당</h2>
+            <ul>
+              
+              
+                
+              
+                
+                  
+                    
+                    
+                      <li class="on">
+                        <a href="javascript:fn_header_menuMove('MXH0000072');">공지사항</a>
+                    
+                  
+                  
+                    </li>
+                    
+                  
+                
+              
+                
+                  
+                    
+                    
+                      <li class="">
+                        <a href="javascript:fn_header_menuMove('MXH0000074');">자료실</a>
+                    
+                  
+                  
+                    </li>
+                    
+                  
+                
+              
+                
+                  
+                    
+                    
+                      <li class="">
+                        <a href="javascript:fn_header_menuMove('MXH0000078');">VR 직업체험</a>
+                    
+                  
+                  
+                    </li>
+                    
+                  
+                
+              
+                
+                  
+                    
+                    
+                      <li class="">
+                        <a href="javascript:fn_header_menuMove('MXH0000076');">직업정보 동영상</a>
+                    
+                  
+                  
+                    </li>
+                    
+                  
+                
+              
+                
+                  
+                    
+                    
+                      <li class="">
+                        <a href="javascript:fn_header_menuMove('MXH0000026');">수료증 진위확인</a>
+                    
+                  
+                  
+                    </li>
+                    
+                  
+                
+              
+                
+                  
+                    
+                    
+                      <li class="">
+                        <a href="javascript:fn_header_menuMove('MXH0000142');">우수사례 공모전</a>
+                    
+                  
+                  
+                    </li>
+                    
+                  
+                
+              
+            </ul>
+            <a href="javascript:void(0);" class="btn-lnb"><span class="blind">메뉴 닫기</span></a>
+        </nav>
+    </div>
+</div>
+<!-- // LNB -->
+
+        <div class="content" id="content">
+          
+
+
+
+
+
+
+
+<!-- TOP -->
+<div class="content-top">
+  
+      <div class="location">
+          <ul>
+              <li class="home"><a href="/" onclick="onSpinBlockUI();">홈</a></li>
+              <!-- 2025.10.02 웹편의성 조치 브레드크럼에 현재 화면의 전체 정보 계층 구조를 표시하여야 함
+              	   브레드크럼은 탐색 중인 화면의 상위 경로로 이동하는 데 사용되고,
+              	   페이지 위치를 파악할 수 있는 탐색 수단이기 때문에 페이지 탐색 계층 구조를 빠짐 없이 표시하여
+              	   사용자가 현재 위치를 파악하고 계층 구조의 수준을 이동할 수 있도록 해야합니다. -->
+              
+              	
+              		
+              			<li><span>알림마당</span></li>
+              		
+					
+              	
+              
+              	
+              		
+					
+              			
+              				
+              				
+				                <li><a href="javascript:fn_header_menuMove('MXH0000072');">공지사항</a></li>
+              				
+						
+					
+              	
+              
+          </ul>
+      </div>
+    
+    <h3>
+      
+        공지사항
+        
+      
+    </h3>
+</div>
+<!-- // TOP -->
+          <!-- contents-body -->
+          
+
+
+
+<!-- SCRIPT -->
+<script>
+
+    // document.ready
+    $(function(){
+
+        const pagination = {
+            currentPageNo         : "1",
+            recordCountPerPage    : "10",
+            pageSize              : "10",
+            totalRecordCount      : "14",
+            totalPageCount        : "2",
+            firstPageNoOnPageList : "1",
+            lastPageNoOnPageList  : "2",
+            firstRecordIndex      : "0",
+            lastRecordIndex       : "10",
+            firstPageNo           : "1",
+            lastPageNo            : "2",
+        };
+
+        gfn_pagination($("#pagination1"), pagination, "fn_searchYouth", "image");
+        gfn_pagination($("#pagination2"), pagination, "fn_searchEntr", "image");
+
+        // 등록일자 디폴트값 설정
+        const today = DateLib.getToday("YYYY-MM-DD"); // 현재일자
+        const ago = DateLib.addDay(-367, today, "YYYY-MM-DD");    // 1년전 일자
+        $("input[name=rgstBgde]").val(ago);
+        $("input[name=rgstEnde]").val(today);
+
+        var postOrderType = "";
+        if($("#ntcnTrgtSecdInput").val() == "E6T00") {  // 청년
+            $("#tab1").attr("aria-selected", true)
+            $("#tab2").attr("aria-selected", false)
+
+            $("#panel1").attr("aria-hidden", false)
+            $("#panel2").attr("aria-hidden", true)
+
+            if(!(postOrderType == null || postOrderType == "" || postOrderType == "undefined")) {
+                $("#postOrderType1").val("").prop("selected", true);
+            }
+        } else if($("#ntcnTrgtSecdInput").val() == "E6T01") { // 기업
+            $("#tab1").attr("aria-selected", false)
+            $("#tab2").attr("aria-selected", true)
+
+            $("#panel1").attr("aria-hidden", true)
+            $("#panel2").attr("aria-hidden", false)
+
+            if(!(postOrderType == null || postOrderType == "" || postOrderType == "undefined")) {
+                $("#postOrderType2").val("").prop("selected", true);
+            }
+        }
+        fn_chkPrgmSecd();
+        fn_setSearchType();
+        fn_setSearchInput();
+        fn_setStttSecd();
+        fn_setRgstProd();
+         
+    });
+
+    // 목록표시 및 정렬 검색
+    function fn_resultSearch(obj){
+        var prgmSecd = "";
+        var newVal = $(obj).val()
+
+        if(!(prgmSecd == null)){
+            prgmSecd = prgmSecd.replace(/[\[|\]]/g, "");  // ('[', ']', ' ') 제거
+        }
+
+        $("#chkPrgmSecd").val(prgmSecd);
+        $('input[name=currentPageNo]').val(1);
+
+        // 페이지 관련 파라미터 세팅
+        if(obj.id == "postOrderType1" || obj.id == "postOrderType2"){
+            $('input[name=postOrderType]').val(newVal);
+        } else {
+            $('input[name=recordCountPerPage]').val(newVal);
+        }
+
+        /*
+         * 웹접근성 점검내용 보완 i_vha 2025-02-05
+         * 목록표시개수, 정렬기준 변경 자동조회 후 focus이동 방지를 위해 추가
+         */
+         ComFnLib.addFocusElement("searchForm", obj.id);
+
+        $("#chkPrgmSecd").val(prgmSecd);
+        const url = "/g/a/selectAnncList.do";
+        const form = new FormLib.Form();
+        form.setForm("#searchForm");
+        ComLib.submit("searchForm");
+    }
+
+
+    /**
+     * 조회조건 초기화
+     */
+     function fn_clear(){
+        if(!confirm("조회조건을 초기화 하시겠습니까?")) return false;
+        // 등록일자 디폴트값 설정
+        const today = DateLib.getToday("YYYY-MM-DD"); // 현재일자
+        const ago = DateLib.addDay(-367, today, "YYYY-MM-DD");    // 1년전 일자
+        $("input[name=rgstBgde]").val(ago);
+        $("input[name=rgstEnde]").val(today);
+
+        $("select[name=searchType]").val(1)        // 검색유형: 제목, 내용, 제목+내용
+        $("input[name=searchInput]").val("")       // 검색유형에 따른 값
+        $("select[name=stttSecd]").val("")         // 글머리 select 박스
+        $("select[name=postOrderType]").val(1)     // 정렬
+
+        if($("#ntcnTrgtSecdInput").val() == "E6T00") {        // 청년
+            fn_prgmSecdGbn1('1');
+        } else if($("#ntcnTrgtSecdInput").val() == "E6T01") { // 기업
+            fn_prgmSecdGbn2('1');
+        }
+    }
+
+    /**
+     * 공지사항 상세 조회
+     * @param {string} anncSeq 게시글번호
+     */
+     function fn_searchDetail(anncSeq){
+        const url = "/g/a/selectAnncDtal.do";
+
+        $("#parameterForm input[name='anncSeq']").val(anncSeq);
+        $("#parameterForm").attr("action", url);
+
+        const form = new FormLib.Form();
+        form.setForm("#parameterForm");
+
+        fn_header_checkMenuAuth(url, function(){
+            ComLib.submit("parameterForm");
+        });
+    }
+
+    /**
+     * 공지사항 목록 조회 :: 청년 공지사항
+     */
+     function fn_searchYouth(currentPageNo) {
+
+        if(!(typeof currentPageNo == "undefined" || currentPageNo == undefined)){
+            $("#postFormYouth input[name='currentPageNo']").val(currentPageNo);
+        }
+        if($("#postFormYouth input[name='searchInput']").val() != ""){
+            $("#postFormYouth input[name='searchInput']").val($("#postFormYouth input[name='searchInput']").val().trim());
+        }
+
+        // 정렬조건 설정 => 1: 최근 등록일순 / 2: 가나다순
+        const form = new FormLib.Form();
+        form.setForm("#postFormYouth");
+        /* form.setHidden("ntcnTrgtSecd", "E6T00"); */
+        ComLib.submit("postFormYouth");
+    }
+
+
+    /**
+     * 공지사항 목록 조회 :: 기업 공지사항
+     */
+     function fn_searchEntr(currentPageNo) {
+
+        if(!(typeof currentPageNo == "undefined" || currentPageNo == undefined)){
+            $("#postFormEntr input[name='currentPageNo']").val(currentPageNo);
+        }
+        if($("#postFormEntr input[name='searchInput']").val() != ""){
+            $("#postFormEntr input[name='searchInput']").val($("#postFormEntr input[name='searchInput']").val().trim());
+        }
+
+        // 정렬조건 설정 => 1: 최근 등록일순 / 2: 가나다순
+        const form = new FormLib.Form();
+        form.setForm("#postFormEntr");
+        /* form.setHidden("ntcnTrgtSecd", "E6T01"); */
+        ComLib.submit("postFormEntr");
+    }
+
+    // 체크박스 셋팅(프로그램 유형)
+    function fn_chkPrgmSecd(){
+        var  prgmSecd = "";
+        if(!(prgmSecd == null)){
+            prgmSecd = prgmSecd.replace(/[\[|\]]/g, "");  // ('[', ']', ' ') 제거
+            for(var i = 0; i < prgmSecd.split(",").length; i++){
+                $("input[name=prgmSecd][value='" + $.trim(prgmSecd.split(",")[i]) + "'").prop("checked", true);
+            }
+        }
+    }
+
+    // 글머리 세팅
+    function fn_setStttSecd(){
+        var  stttSecd = "";
+        if(!(stttSecd == null)) {
+            $("select[name=stttSecd]").val(stttSecd);
+        }
+    }
+
+    // 검색유형 세팅
+    function fn_setSearchType(){
+        var  searchType = "1";
+        if(!(searchType == null)) {
+            $("select[name=searchType]").val(searchType);
+        }
+    }
+
+    // 검색어 세팅
+    function fn_setSearchInput() {
+        var  searchInput = "";
+        if(!(searchInput == null)) {
+            $("input[name=searchInput]").val(searchInput);
+        }
+    }
+
+    // 등록일자 세팅
+    function fn_setRgstProd() {
+        var rgstBgde = "2025-02-21";
+        var rgstEnde = "2026-02-23";
+
+        if(!(rgstBgde == null)) {
+            $("input[name=rgstBgde]").val(rgstBgde);
+        }
+
+        if(!(rgstEnde == null)) {
+            $("input[name=rgstEnde]").val(rgstEnde);
+        }
+    }
+
+
+    // 체크박스 제어(프로그램 유형)
+    function fn_prgmSecdGbn1(prgmSecdId) {
+        if (prgmSecdId == "1") { //전체를 클릭시
+            $("input:checkbox[name='prgmSecd']").prop("checked", false)//모두 해제
+            $("#prgmSecd1").prop('checked', true); //전체는 해제 안되게
+        }else{
+            $("#prgmSecd1").prop('checked', false); //전체 해제
+            // 체크된 프로그램 유형이 없을 경우
+            if($("#prgmSecd1").closest(".chk-group").find("input:checkbox[name='prgmSecd']:checked").length == 0){
+                $("#prgmSecd1").prop('checked', true); //전체는 해제 안되게
+            }
+        }
+    }
+
+
+    // 체크박스 제어(프로그램 유형)
+    function fn_prgmSecdGbn2(prgmSecdId) {
+        if (prgmSecdId == "1") { //전체를 클릭시
+            $("input:checkbox[name='prgmSecd']").prop("checked", false)//모두 해제
+            $("#prgmSecd2").prop('checked', true); //전체는 해제 안되게
+        }else{
+            $("#prgmSecd2").prop('checked', false); //전체 해제
+            // 체크된 프로그램 유형이 없을 경우
+            if($("#prgmSecd2").closest(".chk-group").find("input:checkbox[name='prgmSecd']:checked").length == 0){
+                $("#prgmSecd2").prop('checked', true); //전체는 해제 안되게
+            }
+        }
+    }
+
+</script>
+
+<!-- BODY -->
+<div class="content-body">
+  <!-- 2025.10.13 웹 호환성 조치 -->
+    <input type="hidden" id="ntcnTrgtSecdInput" value="E6T00"/>
+
+    <!-- 상단 탭-->
+    <div class="tab-container">
+        <div class="tab-list" role="tablist" aria-label="공지사항 탭">
+            <button type="button" id="tab1" role="tab" aria-selected=
+            
+                "true"
+                
+            
+            aria-controls="panel1" onclick="javascript:fn_searchYouth('1');">공지사항(청년)</button>
+            <button type="button" id="tab2" role="tab" aria-selected=
+            
+                
+                "false"
+            
+            aria-controls="panel2" onclick="javascript:fn_searchEntr('1')">공지사항(기업)</button>
+        </div>
+
+        <!-- 1. 공지사항(청년) -->
+        <div class="tab-panel" id="panel1" role="tabpanel" aria-labelledby="tab1" aria-hidden=
+            
+                "true"
+                
+            
+        >
+            <form id="postFormYouth" name="postFormYouth" action='/g/a/selectAnncList.do' method="POST" autocomplete="off">
+                <!-- 1. 목록당 표시개수 -->
+                <input type="hidden" id="recordCountPerPage1" name="recordCountPerPage"  value='10' >
+                <!-- 2. 현재 페이지 번호 -->
+                <input type="hidden" id="currentPageNo1" name="currentPageNo" value='1' />
+                <input type="hidden" name="ntcnTrgtSecd" value='E6T00' />
+                <!-- 서치영역 -->
+                <div class="search-area">
+                    <table>
+                    <caption>조회 표 - 검색어, 카테고리, 글머리, 등록일자으로 구성</caption>
+                        <colgroup>
+                            <col class="label">
+                            <col style="width: 50%;">
+                            <col class="label">
+                            <col style="width: 50%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="searchType1">검색어</label></th>
+                                <td colspan="3">
+                                    <div class="d-flex">
+                                        <div class="sel w-150px w-md-100">
+                                            <select id="searchType1" name="searchType" title="검색어 구분 선택">
+                                                <option value="1">제목</option>
+                                                <option value="2">내용</option>
+                                                <option value="3">제목+내용</option>
+                                            </select>
+                                        </div>
+                                        <div class="ipt flex-fill w-md-100">
+                                            <input name="searchInput" type="text" placeholder="검색어를 입력해주세요" title="검색어 입력" onkeydown="if(event.keyCode==13){fn_searchYouth(1);return false;}">
+                                            <button type="button" class="btn-clear"><span class="blind">삭제</span></button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="m-hidden"  data-show-target="searchHidden">
+                                <th><label for="prgmSecd1">카테고리</label></th>
+                                <td colspan="3">
+                                    <div class="chk-group">
+                                        <label class="chk"><input type="checkbox" id="prgmSecd1" name="prgmSecd" value="" onclick="fn_prgmSecdGbn1('1')"  checked = "checked"><span>전체</span></label>
+                                      
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='I' onclick="fn_prgmSecdGbn1(prgmSecd)"><span>인턴형</span></label>
+                                        
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='P' onclick="fn_prgmSecdGbn1(prgmSecd)"><span>프로젝트형</span></label>
+                                        
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='E' onclick="fn_prgmSecdGbn1(prgmSecd)"><span>ESG지원형</span></label>
+                                        
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='C' onclick="fn_prgmSecdGbn1(prgmSecd)"><span>기업탐방형</span></label>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="stttSelect1">글머리</label></th>
+                                <td>
+                                    <div class="sel">
+                                        <select id="stttSelect1" name="stttSecd">
+                                            <option value="">전체</option>
+                                            
+                                                <option value="EBI00">공지</option>
+                                            
+                                                <option value="EBI07">법령/규정/지침</option>
+                                            
+                                                <option value="EBI02">변경/개선</option>
+                                            
+                                                <option value="EBI04">시스템작업</option>
+                                            
+                                                <option value="EBI01">장애</option>
+                                            
+                                                <option value="EBI08">업무메뉴얼</option>
+                                            
+                                                <option value="EBI06">설치프로그램</option>
+                                            
+                                                <option value="EBI03">로그인공지</option>
+                                            
+                                                <option value="EBI05">기타</option>
+                                            
+                                        </select>
+                                    </div>
+                                </td>
+                                <th><label for="rgstBgde1">등록일자</label></th>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="calendar">
+                                            <div class="ipt"><input type="text" id="rgstBgde1" name="rgstBgde" placeholder="날짜입력" title="등록일자 시작일"></div>
+                                            <div class="txt">~</div>
+                                            <div class="ipt"><input type="text" id="rgstEnde1" name="rgstEnde" placeholder="날짜입력" title="등록일자 마감일"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-group">
+                        <button type="button" class="btn primary-line md ico-reset" onclick="javascript:fn_clear()">초기화</button>
+                        <button type="button" class="btn primary-color md ico-search" onclick="javascript:fn_searchYouth()">검색</button>
+                    </div>
+                </div>
+
+                <!-- 청년 공지사항 게시글 수 및 정렬조건 -->
+                <div class="list-top">
+                    <div class="right sort">
+                        <div class="d-flex flex-sm-fill">
+                            <label class="label" for="listCnt1"><strong>목록 표시 개수</strong></label>
+                            <div class="sel w-100px w-lg-80px w-sm-100">
+                                <select name="recordCountPerPage" id="listCnt1" onchange=fn_resultSearch(this);>
+                                    <option value="10"
+                                         selected >10개</option>
+                                    <option value="50"
+                                        >50개</option>
+                                    <option value="100"
+                                        >100개</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-sm-fill">
+                            <label class="label" for="postOrderType1"><strong>정렬 기준</strong></label>
+                            <div class="sel w-140px w-sm-100">
+                                <select name="postOrderType" id="postOrderType1" onchange=fn_resultSearch(this);>
+                                    <option value="1"
+                                         selected >최근 등록일순</option>
+                                    <option value="2"
+                                        >가나다순</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="left total">총
+                        <strong class="blue">
+                            
+                            14
+                        </strong>건
+                    </p>
+                    <button type="button" class="btn primary-color md ico-search">검색</button>
+                </div>
+
+                <!-- 공지사항 목록 -->
+                <div class="tbl list">
+                    <table>
+                        <caption>공지사항(청년) 표 - 번호, 카테고리, 글머리, 제목, 출처, 등록일, 조회수로 구성</caption><!-- 웹접근성 준수를 위해 캡션값 필수 -->
+                        <colgroup>
+                            <col style="width:6%;">
+                            <col style="width:12%;">
+                            <col style="width:12%;">
+                            <col>
+                            <col style="width:14%;">
+                            <col style="width:12%;">
+                            <col style="width:8%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>카테고리</th>
+                                <th>글머리</th>
+                                <th>제목</th>
+                                <th>출처</th>
+                                <th>등록일</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 게시글이 없는 경우 -->
+                            
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">1</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="인턴형, 프로젝트형">인턴형, 프로젝트형</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="알려드립니다."><a href="javascript:fn_searchDetail('83508')"><strong>알려드립니다.</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="대한상공회의소">대한상공회의소</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2026-01-14">2026-01-14</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="12106">12106</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">2</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="2025년도 청년일경험 포털 이용자 만족도조사 실시안내"><a href="javascript:fn_searchDetail('83507')"><strong>2025년도 청년일경험 포털 이용자 만족도조사 실시안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-12-29">2025-12-29</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="4018">4018</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">3</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="청년일경험 시스템 작업 안내(1.3(토) 08:00 ~ 1.4(일) 09:00)"><a href="javascript:fn_searchDetail('83506')"><strong>청년일경험 시스템 작업 안내(1.3(토) 08:00 ~ 1.4(일) 09:00)</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-12-29">2025-12-29</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="549">549</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">4</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="청년일경험 시스템 작업 안내(11.21(금) 21:00~11.22(토) 03:00)"><a href="javascript:fn_searchDetail('83505')"><strong>청년일경험 시스템 작업 안내(11.21(금) 21:00~11.22(토) 03:00)</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-11-19">2025-11-19</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="1070">1070</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">5</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="2025년 미래내일 일경험 우수사례 공모전 결과"><a href="javascript:fn_searchDetail('83502')"><strong>2025년 미래내일 일경험 우수사례 공모전 결과</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="대한상공회의소">대한상공회의소</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-11-11">2025-11-11</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="5542">5542</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">6</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="❗❗캄보디아 불법 고용, 납치 사례 주의 안내 카드 뉴스(바로 가기)❗❗"><a href="javascript:fn_searchDetail('83499')"><strong>❗❗캄보디아 불법 고용, 납치 사례 주의 안내 카드 뉴스(바로 가기)❗❗</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-10-14">2025-10-14</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="895">895</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">7</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="2025년 미래내일 일경험 우수사례 공모전 개최"><a href="javascript:fn_searchDetail('83493')"><strong>2025년 미래내일 일경험 우수사례 공모전 개최</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="대한상공회의소">대한상공회의소</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-09-15">2025-09-15</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="8068">8068</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">8</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="(8.1(금) 22시~)네트워크 및 연관 시스템 DB 증설작업 안내"><a href="javascript:fn_searchDetail('83483')"><strong>(8.1(금) 22시~)네트워크 및 연관 시스템 DB 증설작업 안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-07-28">2025-07-28</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="2288">2288</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">9</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="안내문구(No message...) 조치 방법 안내"><a href="javascript:fn_searchDetail('83476')"><strong>안내문구(No message...) 조치 방법 안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-07-02">2025-07-02</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="1082">1082</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">10</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="청년일경험 포털 SSL인증서 교체 작업 안내"><a href="javascript:fn_searchDetail('83468')"><strong>청년일경험 포털 SSL인증서 교체 작업 안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-06-10">2025-06-10</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="2634">2634</td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 페이징-->
+                <div id="pagination1"></div>
+            </form>
+        </div>
+
+        <!-- 2. 공지사항(기업) -->
+        <div class="tab-panel" id="panel2" role="tabpanel" aria-labelledby="tab2" aria-hidden=
+        
+                
+                "false"
+        
+        >
+            <form id="postFormEntr" name="postFormEntr" action='/g/a/selectAnncList.do' method="POST" autocomplete="off">
+                <!-- 1. 목록당 표시개수 -->
+                <input type="hidden" id="recordCountPerPage2" name="recordCountPerPage"  value='10' >
+                <!-- 2. 현재 페이지 번호 -->
+                <input type="hidden" id="currentPageNo2" name="currentPageNo" value='1' />
+                <input type="hidden" name="ntcnTrgtSecd" value='E6T01' />
+                <!-- 서치영역 -->
+                <div class="search-area">
+                    <table>
+                    <caption>조회 표 - 검색어, 카테고리, 글머리, 등록일자으로 구성</caption>
+                        <colgroup>
+                            <col class="label">
+                            <col style="width: 50%;">
+                            <col class="label">
+                            <col style="width: 50%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="searchType2">검색어</label></th>
+                                <td colspan="3">
+                                    <div class="d-flex">
+                                        <div class="sel w-150px w-md-100">
+                                            <select id="searchType2" name="searchType" title="검색어 구분 선택">
+                                                <option value="1">제목</option>
+                                                <option value="2">내용</option>
+                                                <option value="3">제목+내용</option>
+                                            </select>
+                                        </div>
+                                        <div class="ipt flex-fill w-md-100">
+                                            <input name="searchInput" type="text" placeholder="검색어를 입력해주세요" title="검색어 입력" onkeydown="if(event.keyCode==13){fn_searchEntr(1);return false;}">
+                                            <button type="button" class="btn-clear"><span class="blind">삭제</span></button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="m-hidden"  data-show-target="searchHidden">
+                                <th><label for="prgmSecd2">카테고리</label></th>
+                                <td colspan="3">
+                                    <div class="chk-group">
+                                        <label class="chk"><input type="checkbox" id="prgmSecd2" name="prgmSecd" value="" onclick="fn_prgmSecdGbn2('1')"  checked = "checked"><span>전체</span></label>
+                                      
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='I' onclick="fn_prgmSecdGbn2(prgmSecd)"><span>인턴형</span></label>
+                                        
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='P' onclick="fn_prgmSecdGbn2(prgmSecd)"><span>프로젝트형</span></label>
+                                        
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='E' onclick="fn_prgmSecdGbn2(prgmSecd)"><span>ESG지원형</span></label>
+                                        
+                                            <label class="chk"><input type="checkbox" name="prgmSecd" value='C' onclick="fn_prgmSecdGbn2(prgmSecd)"><span>기업탐방형</span></label>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="stttSelect2">글머리</label></th>
+                                <td>
+                                    <div class="sel">
+                                        <select id="stttSelect2" name="stttSecd">
+                                            <option value="">전체</option>
+                                            
+                                                <option value="EBI00">공지</option>
+                                            
+                                                <option value="EBI07">법령/규정/지침</option>
+                                            
+                                                <option value="EBI02">변경/개선</option>
+                                            
+                                                <option value="EBI04">시스템작업</option>
+                                            
+                                                <option value="EBI01">장애</option>
+                                            
+                                                <option value="EBI08">업무메뉴얼</option>
+                                            
+                                                <option value="EBI06">설치프로그램</option>
+                                            
+                                                <option value="EBI03">로그인공지</option>
+                                            
+                                                <option value="EBI05">기타</option>
+                                            
+                                        </select>
+                                    </div>
+                                </td>
+                                <th><label for="rgstBgde2">등록일자</label></th>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="calendar">
+                                            <div class="ipt"><input type="text" id="rgstBgde2" name="rgstBgde" placeholder="날짜입력" title="등록일자 시작일자"></div>
+                                            <div class="txt">~</div>
+                                            <div class="ipt"><input type="text" id="rgstEnde2" name="rgstEnde" placeholder="날짜입력" title="등록일자 마감일자"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-group">
+                        <button type="button" class="btn primary-line md ico-reset" onclick="javascript:fn_clear()">초기화</button>
+                        <button type="button" class="btn primary-color md ico-search" onclick="javascript:fn_searchEntr()">검색</button>
+                    </div>
+                </div>
+
+                <!-- 청년 공지사항 게시글 수 및 정렬조건 -->
+                <div class="list-top">
+                    <div class="right sort">
+                        <div class="d-flex flex-sm-fill">
+                            <label class="label" for="listCnt2"><strong>목록 표시 개수</strong></label>
+                            <div class="sel w-100px w-lg-80px w-sm-100">
+                                <select name="recordCountPerPage" id="listCnt2" onchange=fn_resultSearch(this);>
+                                    <option value="10"
+                                        >10개</option>
+                                    <option value="50"
+                                        >50개</option>
+                                    <option value="100"
+                                        >100개</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-sm-fill">
+                            <label class="label" for="postOrderType2"><strong>정렬 기준</strong></label>
+                            <div class="sel w-140px w-sm-100">
+                                <select name="postOrderType" id="postOrderType2" onchange=fn_resultSearch(this);>
+                                    <option value="1"
+                                        >최근 등록일순</option>
+                                    <option value="2"
+                                        >가나다순</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- 260223 웹접근성 (yz) -->
+                        <button type="button" class="btn primary-color md ico-search">검색</button>
+                    </div>
+                    <p class="left total">총
+                        <strong class="blue">
+                            14
+                        </strong>건
+                    </p>
+                </div>
+
+                <!-- 공지사항 목록 -->
+                <div class="tbl list">
+                    <table>
+                        <caption>공지사항(기업) 표 - 번호, 카테고리, 글머리, 제목, 출처, 등록일, 조회수로 구성</caption><!-- 웹접근성 준수를 위해 캡션값 필수 -->
+                        <colgroup>
+                            <col style="width:6%;">
+                            <col style="width:12%;">
+                            <col style="width:12%;">
+                            <col>
+                            <col style="width:14%;">
+                            <col style="width:12%;">
+                            <col style="width:8%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>카테고리</th>
+                                <th>글머리</th>
+                                <th>제목</th>
+                                <th>출처</th>
+                                <th>등록일</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 게시글이 없는 경우 -->
+                            
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">1</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="인턴형, 프로젝트형">인턴형, 프로젝트형</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="알려드립니다."><a href="javascript:fn_searchDetail('83508')"><strong>알려드립니다.</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="대한상공회의소">대한상공회의소</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2026-01-14">2026-01-14</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="12106">12106</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">2</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="2025년도 청년일경험 포털 이용자 만족도조사 실시안내"><a href="javascript:fn_searchDetail('83507')"><strong>2025년도 청년일경험 포털 이용자 만족도조사 실시안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-12-29">2025-12-29</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="4018">4018</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">3</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="청년일경험 시스템 작업 안내(1.3(토) 08:00 ~ 1.4(일) 09:00)"><a href="javascript:fn_searchDetail('83506')"><strong>청년일경험 시스템 작업 안내(1.3(토) 08:00 ~ 1.4(일) 09:00)</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-12-29">2025-12-29</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="549">549</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">4</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="청년일경험 시스템 작업 안내(11.21(금) 21:00~11.22(토) 03:00)"><a href="javascript:fn_searchDetail('83505')"><strong>청년일경험 시스템 작업 안내(11.21(금) 21:00~11.22(토) 03:00)</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-11-19">2025-11-19</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="1070">1070</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">5</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="2025년 미래내일 일경험 우수사례 공모전 결과"><a href="javascript:fn_searchDetail('83502')"><strong>2025년 미래내일 일경험 우수사례 공모전 결과</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="대한상공회의소">대한상공회의소</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-11-11">2025-11-11</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="5542">5542</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">6</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="❗❗캄보디아 불법 고용, 납치 사례 주의 안내 카드 뉴스(바로 가기)❗❗"><a href="javascript:fn_searchDetail('83499')"><strong>❗❗캄보디아 불법 고용, 납치 사례 주의 안내 카드 뉴스(바로 가기)❗❗</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-10-14">2025-10-14</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="895">895</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">7</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="2025년 미래내일 일경험 우수사례 공모전 개최"><a href="javascript:fn_searchDetail('83493')"><strong>2025년 미래내일 일경험 우수사례 공모전 개최</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="대한상공회의소">대한상공회의소</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-09-15">2025-09-15</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="8068">8068</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">8</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="(8.1(금) 22시~)네트워크 및 연관 시스템 DB 증설작업 안내"><a href="javascript:fn_searchDetail('83483')"><strong>(8.1(금) 22시~)네트워크 및 연관 시스템 DB 증설작업 안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-07-28">2025-07-28</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="2288">2288</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">9</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="공지">공지</td>
+                                    <td aria-label="제목" class="tal link" title="안내문구(No message...) 조치 방법 안내"><a href="javascript:fn_searchDetail('83476')"><strong>안내문구(No message...) 조치 방법 안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-07-02">2025-07-02</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="1082">1082</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td aria-label="번호" class="m-hidden">10</td>
+                                    <td aria-label="카테고리" class="col-lg-4 col-md-6 col-sm-12" title="전체">전체</td>
+                                    <td aria-label="글머리" class="col-lg-4 col-md-6 col-sm-12" title="시스템작업">시스템작업</td>
+                                    <td aria-label="제목" class="tal link" title="청년일경험 포털 SSL인증서 교체 작업 안내"><a href="javascript:fn_searchDetail('83468')"><strong>청년일경험 포털 SSL인증서 교체 작업 안내</strong></a></td>
+                                    <td aria-label="출처" class="col-lg-4 col-md-6 col-sm-12" title="한국고용정보원">한국고용정보원</td>
+                                    <td aria-label="등록일" class="col-lg-4 col-md-6 col-sm-12" title="2025-06-10">2025-06-10</td>
+                                    <td aria-label="조회수" class="col-lg-4 col-md-6 col-sm-12" title="2634">2634</td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 페이징-->
+                <div id="pagination2"></div>
+            </form>
+        </div>
+    </div>
+
+<!-- 검색 -->
+<form id="searchForm" method="POST">
+    <input type="hidden" name="ntcnTrgtSecd" value="E6T00"/>
+    <input type="hidden" id="chkPrgmSecd" name="prgmSecd"/>
+    <input type="hidden" name="stttSecd" value=""/>
+    <input type="hidden" name="searchType" value="1"/>
+    <input type="hidden" name="searchInput" value=""/>
+    <input type="hidden" name="rgstBgde" value="2025-02-21"/>
+    <input type="hidden" name="rgstEnde" value="2026-02-23"/>
+    <input type="hidden" name="postOrderType" value=""/>
+    <input type="hidden" name="recordCountPerPage" value="10"/>
+    <input type="hidden" name="currentPageNo" value="1"/>
+    <input type="hidden" name="pageSize" value="10"/>
+    <input type="hidden" name="totalRecordCount" value="14"/>
+</form>
+
+<!-- 파라미터폼 -->
+<form id="parameterForm" method="POST">
+    <input type="hidden" name="anncSeq"/>
+    <input type="hidden" name="ntcnTrgtSecd" value="E6T00"/>
+    <input type="hidden" name="prgmSecd" value=""/>
+    <input type="hidden" name="stttSecd" value=""/>
+    <input type="hidden" name="searchType" value="1"/>
+    <input type="hidden" name="searchInput" value=""/>
+    <input type="hidden" name="rgstBgde" value="2025-02-21"/>
+    <input type="hidden" name="rgstEnde" value="2026-02-23"/>
+    <input type="hidden" name="postOrderType" value=""/>
+    <input type="hidden" name="recordCountPerPage" value="10"/>
+    <input type="hidden" name="currentPageNo" value="1"/>
+    <input type="hidden" name="pageSize" value="10"/>
+    <input type="hidden" name="totalRecordCount" value="14"/>
+</form>
+</div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    
+
+<!-- Nethru Tag Manager -->
+<script>
+(function(f,d,k,h){var b;var a=m()+"ver="+c(d);g();function e(){var o=document.getElementsByTagName(f)[0];var n=document.createElement(f);n.async=true;n.charset="utf-8";n.src=a;o.parentNode.insertBefore(n,o)}function m(){return window.location.protocol=="https:"?"https://tag.work.go.kr/static/00002/install.js?":"https://tag.work.go.kr/static/00002/install.js?"}function c(n){var o=new Date().getTime();var p=n*1000*60;return n>0?Math.floor(o/p)*p:o}function g(){var n=l();if(!n){return false}n.open("GET",a,true);n.withCredentials=h;n.send(null);n.onload=function(){j();e()};n.onerror=n.onabort=function(){j()};i(function(){n.abort()},k)}function l(){var q;var o=[function(){return new XDomainRequest()},function(){return new XMLHttpRequest()},function(){return new ActiveXObject("Msxml2.XMLHTTP")},function(){return new ActiveXObject("Msxml3.XMLHTTP")},function(){return new ActiveXObject("Microsoft.XMLHTTP")}];for(var n=0;n<o.length;n++){try{q=o[n]()}catch(p){continue}break}return q}function i(o,n){b=setTimeout(o,n)}function j(){if(b){clearTimeout(b);b=null}}})("script",60,/*{{timeout}}*/2000,/*{{withCredentials}}*/false);
+
+</script>
+<!-- End Nethru Tag Manager -->
+<!-- FOOTER -->
+
+<footer class="footer-new">
+    <div class="inner">
+        <div class="logoNew"><img src="/static/images/commonNew/logo.png" alt="청년 일경험 포털 로고"></div>
+        <div class="footer-top-new">
+            <p class="addr">(27740) 충청북도 음성군 맹동면 태정로 6 한국고용정보원</p>
+            <ul class="info">
+                <li><span class="bold">홈페이지 전산 이용 문의</span><a href="tel:1577-7114">1577-7114</a><p>(유료, 한국고용정보원 고객상담센터 평일 09:00~18:00)</p></li>
+                <li><span class="bold">고용·노동 분야 제도 문의</span><a href="tel:1350">국번없이 1350</a><p>(유료, 고용노동부 고객상담센터 평일 09:00~18:00)</p></li>
+            </ul>
+            <div class="link-list">
+                <a href="/a/c/selectUtzeStptInfo.do" onclick="onSpinBlockUI();" title="이용약관 바로가기">이용약관</a>
+                <a href="/a/c/selectIdifPrssPlcyInfo.do" onclick="onSpinBlockUI();" title="개인정보처리방침 바로가기" class="blue"><strong>개인정보처리방침</strong></a>
+                <a href="/a/c/openEmailAdrPrssPlcy.do" onclick="onSpinBlockUI();" title="이메일무단수집거부 바로가기">이메일무단수집거부</a>
+                <a href="/a/c/openCpyrPoly.do" onclick="onSpinBlockUI();" title="저작권보호정책 바로가기">저작권보호정책</a>
+                <a href="/h/d/selectSiteMapDtal.do" onclick="onSpinBlockUI();" title="사이트맵 바로가기">사이트맵</a>
+            </div>
+            <ul class="footer-bottom-new">
+                <li><a href="http://www.moel.go.kr" target="_blank" title="고용노동부 홈페이지 새창열림"> <img src="/static/images/commonNew/logo-moel.png" alt="고용노동부 홈페이지 이미지">고용노동부 <i class="new-tab"></i></a></li>
+                <li><a href="https://www.keis.or.kr" target="_blank" title="한국고용정보원 홈페이지 새창열림"><img src="/static/images/commonNew/logo-keis.png" alt="한국고용정보원 홈페이지 이미지"> 한국고용정보원 <i class="new-tab"></i></a></li>
+            </ul>
+            <div class="wa"><img src="/static/images/commonNew/logo-wa.png"alt="WA 품질인증 마크, 웹와치(WebWatch) 2025.03.13 ~ 2026.03.12"></div>
+        </div>
+        <div class="copyright-new"><p>Copyright © 2025 고용노동부 한국고용정보원 all rights reserved.</p></div>
+        <div class="family-site-wrap">
+            <div class="family-site-new">
+                <button type="button" title="열기" class="family-site-button">패밀리사이트</button>
+                    <ul class="family-site-list">
+                        <li><a href="https://www.work24.go.kr" target="_blank" title="고용24 홈페이지 새창열림">고용24</a></li>
+                        <li><a href="https://eis.work.go.kr" target="_blank" title="고용행정통계 홈페이지 새창열림">고용행정통계</a></li>
+                        <li><a href="https://www.workplus.go.kr" target="_blank" title="고용복지센터 홈페이지 새창열림">고용복지센터</a></li>
+                        <li><a href="https://www.work.go.kr/cyberedu/main.do" target="_blank" title="사이버진로교육센터 홈페이지 새창열림">사이버진로교육센터</a></li>
+                        <li><a href="https://saeil.mogef.go.kr/hom/HOM_Main.do" target="_blank" title="여성새로일하기센터 홈페이지 새창열림">여성새로일하기센터</a></li>
+                        <li><a href="https://www.worktogether.or.kr" target="_blank" title="장애인고용포털 홈페이지 새창열림">장애인고용포털</a></li>
+                        <li><a href="https://www.gasarang.go.kr/hpgsMain.do" target="_blank" title="가사랑 홈페이지 새창열림">가사랑</a></li>
+                        <li><a href="https://www.work.go.kr/gongsi/empReportInfo/retrieveGetGongsiList.do" target="_blank" title="고용형태공시제 홈페이지 새창열림">고용형태공시제</a></li>
+                        <li><a href="https://www.eps.go.kr" target="_blank" title="외국인고용(외국인전용) 홈페이지 새창열림">외국인고용(외국인전용)</a></li>
+                    </ul>
+           </div>
+       </div>
+    </div>
+</footer>
+  <!-- // FOOTER -->
+<div id="spin"></div>
+  </div>
+</body>
+</html>

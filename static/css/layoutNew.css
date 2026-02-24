@@ -14,7 +14,7 @@ body.noScroll{overflow: hidden;}
 .header-banner{position: relative;overflow: hidden;box-sizing: border-box;}
 .header-banner .swiper-wrapper{height: 100% !important;}
 .header-banner .swiper-slide a{display: block;}
-/* 260223 웹접근성  (yz) */
+/* 260223 웹접근성 (yz) */
 .header-banner .swiper-slide a:focus-visible img{outline: 3px solid; outline-offset: -3px;}
 .header-banner .swiper-slide a img{width: 100%;}
 .header-banner .swiper-slide a img.pc{display: block;aspect-ratio: 30 / 1;max-height: 65px;}
@@ -41,7 +41,8 @@ body.noScroll{overflow: hidden;}
 .srch-wrap .inp-box{display: inline-block;width: calc(100% - 64px);}
 .srch-wrap .inp{width: calc(100%);height:48px; padding:8px 16px; padding-left: 56px;padding-right: 35px;font-size: 17px;border: 1px solid #0B50D0;}
 .srch-wrap .inp-wrap .inp-box .inp-search-icon{position:absolute; left:16px; top:50%; transform:translateY(-50%); width:32px; height:32px;background: url(../images/common/ico_search_blue.svg)center no-repeat; background-size:contain; pointer-events:none; }
-.srch-wrap .inp::placeholder{color: #8A949E;}
+/* 260223 웹접근성 (yz) */
+.srch-wrap .inp::placeholder{color: #333;}
 
 .srch-wrap .inp-wrap{position: relative;font-size: 0;}
 .srch-wrap .inp-wrap .btn-srch{display: inline-block;margin-left: 16px;width: 48px;height: 48px;background: #256EF4 url(../images/common/ico_search_w.svg)center no-repeat;background-size:50%;border-radius: 6px;transition: .2s;}

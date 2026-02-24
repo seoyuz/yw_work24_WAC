@@ -101,12 +101,13 @@ caption{position:absolute; width:1px; height:1px; margin:-1px; padding:0; border
 table{border-spacing:0;border-collapse:collapse;}
 select{appearance:none; -webkit-appearance:none; font-family:inherit;}
 
+/* 260223 웹접근성 (yz) */
 input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder{color:#707070; font-size:inherit;}
+textarea::-webkit-input-placeholder{color:#333; font-size:inherit;}
 input:-moz-placeholder,
-textarea:-moz-placeholder{color:#3d1e1e; font-size:inherit;}
+textarea:-moz-placeholder{color:#333; font-size:inherit;}
 input:-ms-input-placeholder,
-textarea:-ms-input-placeholder{color:#707070; font-size:inherit;}
+textarea:-ms-input-placeholder{color:#333; font-size:inherit;}
 
 .blind{position:absolute; left:-9999px; width:0.01px; height:0.01px; font-size:0.1px; line-height:0.01px; overflow:hidden;}
 
